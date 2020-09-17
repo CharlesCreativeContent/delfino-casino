@@ -9,7 +9,7 @@ var db, collection;
 const url = "mongodb+srv://shawn:shawnpassword@cluster0.ml67f.mongodb.net/demo?retryWrites=true&w=majority";
 const dbName = "demo";
 
-app.listen(3000, () => {
+app.listen(PORT, () => {
     MongoClient.connect(url, { useNewUrlParser: true, useUnifiedTopology: true }, (error, client) => {
         if(error) {
             throw error;
